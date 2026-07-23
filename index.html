@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-Learning</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="startScreen">
+
+<h1>K-Learning for Driver</h1>
+
+<h2>Select Language</h2>
+
+<div id="languageButtons">
+
+<button class="langBtn" onclick="changeLanguage('en',this)">English</button>
+
+<button class="langBtn" onclick="changeLanguage('zh',this)">中文</button>
+
+<button class="langBtn" onclick="changeLanguage('ms',this)">Bahasa Melayu</button>
+
+<button class="langBtn" onclick="changeLanguage('th',this)">ไทย</button>
+
+<button class="langBtn" onclick="changeLanguage('id',this)">Indonesia</button>
+
+<button class="langBtn" onclick="changeLanguage('hi',this)">हिन्दी</button>
+
+<button class="langBtn" onclick="changeLanguage('ar',this)">العربية</button>
+
+<button class="langBtn" onclick="changeLanguage('tl',this)">Tagalog</button>
+
+<button class="langBtn" onclick="changeLanguage('tw',this)">台湾華語</button>
+
+<button class="langBtn" onclick="changeLanguage('vi',this)">Tiếng Việt</button>
+
+</div>
+<br><br>
+
+<p id="nameLabel">Please enter your name.</p>
+
+<input type="text" id="playerName">
+
+<br><br>
+
+<button onclick="startQuiz()">Start Quiz</button>
+
+</div>
+
+<div id="quizScreen" style="display:none;">
+
+<h1>K-Learning for Driver</h1>
+
+<img id="quizImage" src="">
+
+<p id="question"></p>
+
+<button id="btn1" onclick="judge(0)"></button>
+
+<button id="btn2" onclick="judge(1)"></button>
+
+<button id="btn3" onclick="judge(2)" style="display:none;"></button>
+
+<h2 id="result"></h2>
+
+<button id="nextBtn" onclick="nextQuestion()" style="display:none;">
+Next Question
+</button>
+
+<div id="certificate" style="display:none;">
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
